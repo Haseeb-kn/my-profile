@@ -6,11 +6,22 @@
     <title>Your Name - Profile</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<div id="scroll-progress"></div>
+
 <body>
-    <header>
-        <h1>Haseebullah Sardar Khan Niazi</h1>
-        <p>Welcome to my personal website!</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Hi, I'm Haseebullah Niazi</h1>
+        <p> ML and AI Enginner | Power Systems Expert | Freelancer</p>
     </header>
+    
 
     <section id="about">
         <h2>About Me</h2>
@@ -18,11 +29,29 @@
     </section>
 
     <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Showcase your projects here.</p>
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+                <p>Short description of your project.</p>
+            </div>
+            <div class="project">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>Short description of your project.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
         <h2>Contact Me</h2>
         <p>Email: Haseebskn@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/haseebullah-sardar-khan-niazi-a4953b239/">LinkedIn</a></p>
@@ -31,15 +60,10 @@
     <footer>
         <p>&copy; 2025 Haseebskn</p>
     </footer>
-    <button onclick="changeBgColor()">Toggle Background</button>
 
+    <!-- The Back to Top button -->
+    <button id="backToTop">&#8679; Top</button>
+
+    <script src="script.js"></script>
 </body>
-<nav>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
 </html>
